@@ -44,7 +44,7 @@ public class Module {
         return this.name;
     }
     public enum Category {
-        Combat, Movement, Player, Render, Misc, Exploit;
+        Combat, Movement, Player, Render, Misc;
     }
 
     public void toggle() {
