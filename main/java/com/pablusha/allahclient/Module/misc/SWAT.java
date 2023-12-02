@@ -9,7 +9,7 @@ import org.lwjgl.opengl.Display;
 public class SWAT extends Module {
     public static boolean swatted = false; // Eblusha ezz swatted
     public SWAT() {
-        super("SWAT ALLAH CLIENT", Keyboard.KEY_F10, Category.Misc);
+        super("SWAT", Keyboard.KEY_F10, Category.Misc);
     }
 
     @Override

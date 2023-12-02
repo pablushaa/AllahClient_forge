@@ -1,6 +1,7 @@
 package com.pablusha.allahclient.keys;
 
 import com.pablusha.allahclient.AllahClient;
+import com.pablusha.allahclient.ExampleMod;
 import com.pablusha.allahclient.Module.misc.SWAT;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -14,7 +15,7 @@ public class key {
             if(Keyboard.getEventKey() != Keyboard.KEY_NONE) {
                 AllahClient.keyPress(Keyboard.getEventKey());
                 if (Keyboard.getEventKey() == Keyboard.KEY_R && !SWAT.swatted) {
-                    Minecraft.getMinecraft().displayGuiScreen(AllahClient.clickGui);
+                    Minecraft.getMinecraft().displayGuiScreen(ExampleMod.instance.clickGui);
                 }
             }
         }

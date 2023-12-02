@@ -15,7 +15,7 @@ public class Velocity extends Module {
         if(mc.player.hurtTime > 0) {
             mc.player.motionX = 0;
             mc.player.motionY = 0;
-            mc.player.motionX = 0;
+            mc.player.motionZ = 0;
         }
     }
 }

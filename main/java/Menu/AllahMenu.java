@@ -33,7 +33,7 @@ public class AllahMenu extends GuiScreen {
 
         this.drawGradientRect(0, height - 100, width, height, 0x00000000, 0xff000000);
 
-        String[] buttons = {"Singleplayer", "Multiplayer", "Settings", "Author", "Quit"};
+        String[] buttons = {"Singleplayer", "Multiplayer", "Settings", "Author", "User", "Quit"};
 
         int count = 0;
         for (String name : buttons) {
@@ -56,7 +56,7 @@ public class AllahMenu extends GuiScreen {
     }
 
     public void mouseClicked(int mouseX, int mouseY, int button) {
-        String[] buttons = {"Singleplayer", "Multiplayer", "Settings", "Author", "Quit"};
+        String[] buttons = {"Singleplayer", "Multiplayer", "Settings", "Author", "User", "Quit"};
 
         int count = 0;
         for (String name : buttons) {
@@ -84,6 +84,9 @@ public class AllahMenu extends GuiScreen {
                         break;
                     case "Settings":
                         mc.displayGuiScreen(new GuiOptions(this, mc.gameSettings));
+                        break;
+                    case "User":
+                        mc.displayGuiScreen(new changeusername());
                         break;
                     case "Quit":
                         mc.shutdown();
