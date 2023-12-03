@@ -7,7 +7,7 @@ import org.lwjgl.input.Keyboard;
 
 public class BunnyHop extends Module {
     public BunnyHop() {
-        super("BunnyHop", Keyboard.KEY_NONE, Category.Movement);
+        super("Bunny Hop", Keyboard.KEY_NONE, Category.Movement);
     }
 
     @SubscribeEvent

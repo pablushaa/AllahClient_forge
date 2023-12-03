@@ -12,7 +12,7 @@ import org.lwjgl.input.Keyboard;
 
 public class StashFinder extends Module {
     public StashFinder() {
-        super("StashFinder", Keyboard.KEY_NONE, Category.Misc);
+        super("Stash Finder", Keyboard.KEY_NONE, Category.Misc);
     }
 
     public int counter = 0;

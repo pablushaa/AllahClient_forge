@@ -20,13 +20,11 @@ public class KillAura extends Module {
     public Minecraft mc = Minecraft.getMinecraft();
     public KillAura() {
         super("KillAura", Keyboard.KEY_Z, Category.Combat);
-
-        ArrayList<String> options = new ArrayList<>();
-        options.add("Range");
-        options.add("Rotations");
-        ExampleMod.instance.settingsManager.rSetting(new Setting("Range", this, 3.6, 1, 5, false));
+        ExampleMod.instance.settingsManager.rSetting(new Setting("Range", this, 3.6, 1, 6, false));
         ExampleMod.instance.settingsManager.rSetting(new Setting("Rotations", this, true));
     }
+
+    @SubscribeEvent
     public void onUpdate(RenderWorldLastEvent e) {
         double range = ExampleMod.instance.settingsManager.getSettingByName(this.name, "Range").getValDouble();
         boolean rotations = ExampleMod.instance.settingsManager.getSettingByName(this.name, "Rotations").getValBoolean();
